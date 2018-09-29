@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+	// window.onload;
+// $===jquery
+// $(callback)==>当页面加载完成时严执行的操作,相当于window.onload;
+$(function(){
+	// alert(1);
+	//  $(选择器);===>获取当前页面元素
+
+
+	// 一.基本选择器
+	// 1 .id
+	// let box =$("#box");
+	// console.log(box);	
+	// box.css({"background":"yellow"})
+
+	// 2 .标签
+	// let p1=$("p");
+	// p1.css({"color":"black"});
+
+	// 3 .class
+	// let text=$(".text");
+	// text.css({"color":"green"});
+
+	// 4 .全局（body)
+	// let all=$("*");
+	// all.css({"padding":0,"margin":0});
+
+	// 5 .群组选择器
+	// let group=$("div,p,span");
+	// group.css({"color":"pink"});
+
+
+	// 二.层级选择器
+	// 1.后代选择器:祖先元素下匹配所有的后代元素
+	// let ele=$("form label");
+	// ele.css({"color":"red"});
+
+	// 2.子代选择器:父元素下匹配所有的子元素
+	// let ele=$("form>label");
+	// ele.css({"border":"1px solid red"});
+
+	// 3.同级选择器：匹配所有紧跟在label后面的input元素
+	// let ele=$("label+input");
+	// ele.css({"border":"1px solid yellow"});
+
+	// 4.兄弟选择器：匹配prev元素之后的所有siblings
+	// let ele=$("form~input");
+	// ele.css({"border":"1px solid red"});
+
+	// 三.基本筛选器
+	// 1.选择第一个
+	// let li1=$(li:first);
+
+	// let ele=$(":not(span)");
+	// 2.not 取反
+	
+	// 3.even匹配索引值为偶数   从零开始
+	let ele=$("li:even");
+
+	// 4.odd匹配索引值为奇数  从零开始
+	let ele=$("li:odd");
+
+	// 5.索引值为2的所有标签（最常用）
+	let ele=$("li:eq(2)");
+
+	// 5.索引值大于2的所有标签
+	let ele=$("li:gt(2)");
+
+	// 7.索引值小于2的所有标签
+	let ele=$("li:It(2)");
+
+	// 8.最后一个
+	let ele=$("li:last");
+
+	// 10. 选标题
+	let ele=$("header");
+
+	// 11.有动画的元素
+	// 12.获取焦点的元素
+	// 13.root
+	// rem root根元素  em相对于父元素的字体大小
+	// 14.target:
+
+	// 四.内容选择器
+	// contains
+	// has
+
+	// 五.可见性
+	// hidden 
+	// visible
+
+	// 六.属性选择器  同css
+	// 七.子元素  同css
+	// 八.表单  表单对象通过type类型选 有类型的input框都能选中 
+
+
+})
+</script>

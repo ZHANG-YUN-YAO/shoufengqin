@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>手风琴</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+		*{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		ul{
+			width: 805px;
+			height: 500px;
+	/*		border: 1px solid #000;*/
+			margin: 50px auto;
+		}
+		ul li{
+			width: 100px;
+			height: 100%;
+			background: red;
+			float: left;
+			/*border: 1px solid #999;*/
+			overflow: hidden;
+			position: relative;
+		}
+		ul li p{
+			width: 100px;
+			height: 500px;
+			background-color: rgba(0,0,0,0.5);
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: #fff;
+			font-size: 30px;
+			line-height: 500px;
+			text-align: center;
+
+		}
+		ul li img{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<p>图片一</p>
+			<img src="../img/xmad_14969993997626_ElorF.jpg">
+		</li>
+		<li>
+			<p>图片二</p>
+			<img src="../img/xmad_14969993997626_ElorF.jpg">
+		</li>
+	
+
+		<li>
+			<p>图片三</p>
+			<img src="../img/xmad_14969993997626_ElorF.jpg">
+		</li>
+	
+	
+		<li>
+			<p>图片四</p>
+			<img src="../img/xmad_14969993997626_ElorF.jpg">
+		</li>
+	</ul>
+	
+		
+	
+
+</body>
+</html>
+<script type="text/javascript">
+	
+	$("li").click(function(){
+		$(this).animate({width:500},"slow").siblings().animate({width:100},"slow")
+	})
+</script>
